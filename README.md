@@ -1,1 +1,0 @@
-# kriptos_proyect
