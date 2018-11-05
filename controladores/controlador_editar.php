@@ -13,12 +13,13 @@ $actualizacion_dato= $objeto1->GuardarUsuario($conn,$n,$m,$t,$a,$c);
 if($actualizacion_dato==1){
 	echo 'Tu informacion a sido recibida, nos pondremos en contacto';
 }else{
-	echo 'Error vuelve a intentar';
+	echo 'Error, vuelve a intentar';
 }
 
 ?>
 
 <!DOCTYPE html>
+<html lang="en">
 <head>
 	<!-- Required meta tags -->
   <meta charset="utf-8">
@@ -30,9 +31,10 @@ if($actualizacion_dato==1){
 
   <link rel="stylesheet" href="css/style.css">
 
-	<title></title>
+	<title>Resume</title>
 </head>
 <body>
 <div class="contenedor" style="max-width: 600px;"></div>
+
 </body>
 </html>
