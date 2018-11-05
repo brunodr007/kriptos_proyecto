@@ -32,6 +32,7 @@ $(document).ready(function(){
     
     $('.button-collapse').sideNav('hide');
     //contact form
+    /*
     var contact = $("form[name='contact']");
     contact.submit(function(){
         var btn_submit = $(this).find("button[type='submit']");
@@ -60,6 +61,7 @@ $(document).ready(function(){
         
         return false;
     });
+    */
     
     $(".portada").height($(window).height());
 });

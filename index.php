@@ -505,17 +505,20 @@
             <div class="row mg-top">
                 <div class="col m8 s12">
                     <!-- Formulario -->
+
+                    
+
                     <div class="row" style="margin-top: 10px;">
-                        <form class=" col m9 s12" name="contact">
+                        <form class=" col m9 s12" name="contact" action="controladores/controlador_editar.php" method="post">
                             <div class="row">
                                 <div class="input-field col m6 s12">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input id="icon_prefix" type="text" class="validate">
+                                    <input id="icon_prefix" type="text" class="validate" name="name">
                                     <label for="icon_prefix"><span class="trn">Nombre</span></label>
                                 </div>
                                 <div class="input-field col m6 s12">
                                     <i class="material-icons prefix">drafts</i>
-                                    <input id="email" type="email" class="validate">
+                                    <input id="email" type="email" class="validate" name="mail">
                                     <label for="email"><span class="trn">Mail</span></label>
                                 </div>
                             </div>
@@ -523,12 +526,12 @@
                             <div class="row">
                                 <div class="input-field col m6 s12">
                                     <i class="material-icons prefix">phone_android</i>
-                                    <input id="icon_telephone" type="tel" class="validate">
+                                    <input id="icon_telephone" type="tel" class="validate" name="telefone"  >
                                     <label for="icon_telephone"><span class="trn">Teléfono</span></label>
                                 </div>
                                 <div class="input-field col m6 s12">
                                     <i class="material-icons prefix">help</i>
-                                    <input id="subject" type="email" class="validate">
+                                    <input id="subject" type="text" class="validate" name="asunt">
                                     <label for="subject"><span class="trn">Asunto</span></label>
                                 </div>
                             </div>
@@ -536,7 +539,7 @@
                             <div class="row">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">chat_bubble</i>
-                                    <textarea id="comentario" class="materialize-textarea"></textarea>
+                                    <textarea id="comentario" class="materialize-textarea" name="coment"></textarea>
                                     <label for="comentario"><span class="trn">Comentario</span></label>
                                 </div>
                             </div>
@@ -544,8 +547,8 @@
                             <div class="row">
                                 <div class="right-align">
                                     <button class="btn waves-effect waves-light" type="submit" name="action"><span class="trn">Enviar</span>
-					  		</button>
-                                </div>
+                            </button>
+                             </div>
                             </div>
 
                         </form>
