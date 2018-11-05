@@ -10,12 +10,8 @@ $c=$_POST["coment"];
 
 $objeto1 = new Kryptos();
 $actualizacion_dato= $objeto1->GuardarUsuario($conn,$n,$m,$t,$a,$c);
-if($actualizacion_dato==1){
-	echo 'Tu informacion a sido recibida, nos pondremos en contacto';
-}else{
-	echo 'Error, vuelve a intentar';
-}
-
+$conectado='Tu informacion a sido recibida, nos pondremos en contacto';
+$fallida='Error, vuelve a intentar';
 ?>
 
 <!DOCTYPE html>
@@ -26,15 +22,23 @@ if($actualizacion_dato==1){
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/boostrap.css">
+  <link rel="stylesheet" href="/practicas/kryptos-master/css/boostrap.css">
 
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/practicas/kryptos-master/css/style.css">
 
 	<title>Resume</title>
 </head>
-<body>
-<div class="contenedor" style="max-width: 600px;"></div>
-
+<body class="text-center">
+<div class="alert alert-success" role="alert">
+	 <?php
+	 	if($actualizacion_dato==1){
+			echo $conectado;
+			mysqli_close($conn);
+	 	}else{
+			echo $fallida;
+	 	}
+	 ?>
+	 </div>
 </body>
 </html>
